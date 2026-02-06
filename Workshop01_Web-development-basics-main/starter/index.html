@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simo Rönni Fullstack</title>
+    
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Etusivu</a></li>
+            <li><a href="#about">Tietoa minusta</a></li>
+            <li><a href="#contact">Ota yhteyttä</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="home">
+            <img src="css/images/omakuva.JPG" alt="Profiilikuva" class="profiilikuva">
+            
+            <h1>Simo Rönni</h1>
+            <h2>Tervetuloa</h2>
+            <p>Olen opiskelija ja tämä on harjoitustyöni.</p>
+        </section>
+        
+        <section id="about">
+            <h2>Tietoa minusta</h2>
+            <p>Opiskelen tällä hetkellä verkkosivujen kehitystä. Tavoitteenani on oppia Fullstack-ohjelmointia ja luoda toimivia verkkosovelluksia.</p>
+        </section>
+        
+        <section id="contact">
+            <h2>Ota yhteyttä</h2>
+            <form action="#" method="post" onsubmit="alert('Viesti lähetetty (Ei oikeasti)'); return false;">
+                <label for="name">Nimi:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Sähköposti:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Viesti:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <button type="submit">Lähetä</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Simo Rönni</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,180 @@
+/* =================================
+   CSS Styles for Workshop 01
+   ================================= */
+
+/* Reset and Base Styles */
+* {
+    /* TÄRKEÄ: Poistaa reunat, jotta nav/footer menevät reunaan asti */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    /* Taustalle vaalein väri */
+    background-color: #DAF1DE;
+    /* Tekstille tummin väri */
+    color: #051F20;
+}
+
+/* Headings */
+h1 {
+    /* Otsikko vasemmalle, jotta kuva sopii viereen */
+    text-align: left;
+    color: #0B2B26;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #163832;
+    border-bottom: 2px solid #8EB69B;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 15px;
+}
+
+/* General Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(5, 31, 32, 0.2);
+}
+
+/* ERITYISTYYLI PROFIILIKUVALLE */
+.profiilikuva {
+    width: 150px;           /* Pieni koko */
+    float: right;           /* Kellutus oikealle tekstin viereen */
+    margin-left: 20px;      
+    margin-bottom: 20px;    
+    margin-top: 0;
+    border: 2px solid #235347;
+    /* Pakotetaan block/inline-block */
+    display: inline-block;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #0B2B26;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #DAF1DE;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #8EB69B;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #8EB69B;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Form Styles */
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #8EB69B;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #0B2B26;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #235347;
+    border-radius: 4px;
+}
+
+button,
+input[type="submit"] {
+    background-color: #235347;
+    color: #DAF1DE;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #163832;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #051F20;
+    color: #DAF1DE;
+    margin-top: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    /* Mobiilissa kuva keskelle ja isommaksi */
+    .profiilikuva {
+        float: none;
+        display: block;
+        margin: 20px auto;
+        width: auto;
+        max-width: 200px;
+    }
+}
