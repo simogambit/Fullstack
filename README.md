@@ -1,1 +1,1 @@
-jes
+Eka tehtävä fullstackin parissa. Kertausta.

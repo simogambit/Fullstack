@@ -1,1 +1,0 @@
-Eka tehtävä fullstackin parissa. Kertausta.
